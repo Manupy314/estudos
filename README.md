@@ -3,6 +3,9 @@ Oi, pessoal! Tudo bem?
 Aqui estão alguns dos muitos exercícios que fiz e venho fazendo para melhorar minha lógica de programação.
 Conhecimento bom é aquele que se compartilha :D
 
+O material que está fora da pasta é uma tentativa de caderno então tem só a parte teórica.
+Os exercícios estão nas pastas.
+
 Tem exercícios do curso que fiz do professor Vinicius Pozzobon Borin e exercícios que pedi pro chat fazer para mim.
 segue o curso: https://www.udemy.com/share/109P3A3@IiJr1CLqfuv7uWNmLojQC0FIuJpVHochCZRWcuS4CdaHuEqZiHQtMa8FN7IW497w0A==/
 
