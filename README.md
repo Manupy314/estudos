@@ -1,6 +1,6 @@
 Oi, pessoal! Tudo bem?
 
-Aqui estão alguns dos muitos exercícios que fiz e venho fazendo para mlehorar minha lógica de programação.
+Aqui estão alguns dos muitos exercícios que fiz e venho fazendo para melhorar minha lógica de programação.
 Conhecimento bom é aquele que se compartilha :D
 
 Tem exercícios do curso que fiz do professor Vinicius Pozzobon Borin e exercícios que pedi pro chat fazer para mim.
