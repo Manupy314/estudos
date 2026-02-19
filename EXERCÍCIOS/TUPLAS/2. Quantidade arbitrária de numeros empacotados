@@ -1,0 +1,11 @@
+def maior(msg, *num):
+    maior = 0
+    for i in num:
+        if  i  > maior:
+            maior = i
+    
+    print(msg, maior)
+    
+##programa principal
+
+maior('Maior: ', 8,6,4,5,15,8,56)

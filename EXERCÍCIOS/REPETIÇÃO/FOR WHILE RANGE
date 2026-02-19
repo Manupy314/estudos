@@ -1,0 +1,35 @@
+#versão 01
+i = 10
+while (i >= 0):
+    print(i)
+    i = i - 1
+    
+print('FOGO!')
+
+print()
+
+#versão 02
+
+for contador in range (10, -1 , -1): #range de dez a zero, de -1 em -1;
+    print(contador)
+    
+print()
+    
+#versão 03
+
+for variavel in range (0, 6, 1 ):#range de dez a zero, de -1 em -1;
+    print(variavel) #resultado 0 1 2 3 4 5 
+    
+print()
+    
+frase = 'Curso de Python'
+for i in range(0, len(frase), 1):
+    print(frase[i])
+
+tabuada = 1
+while tabuada <= 10:
+    print(f'TABUADA DO {tabuada}: ')
+    tabuada += 1
+    for i in range(1, 11, 1):
+        print(f'{i} x {tabuada} = {i * tabuada}')
+    tabuada += 1

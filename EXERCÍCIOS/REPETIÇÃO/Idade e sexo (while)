@@ -1,0 +1,17 @@
+#Pergunte ao usuário idade e sexo (m ou f)
+#Cada resposta uma mensagem:
+#Boa noite, Senhor(a). SUa idade é <idade>" para cada gênero
+#Encerra quando usuário coloca idade negativa
+ 
+idade = int(input('Insira sua idade: '))
+
+while idade >= 0:
+    sexo = input('Qual seu sexo? (M ou F): ').strip().upper()
+
+    if sexo == 'M':
+        print(f'Boa noite, Senhor. Sua idade é {idade}')
+    elif sexo == 'F':
+        print(f'Boa noite, Senhora. Sua idade é {idade}')
+    else:
+        print('Encerrando...')
+        break

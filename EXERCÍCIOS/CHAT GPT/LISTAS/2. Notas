@@ -1,0 +1,14 @@
+numeros = list()
+
+for i in range(5):
+    numeros.append(int(input('Digite um número inteiro: ')))
+    
+contador = 0
+for nota in numeros:
+    if nota >= 7:
+        contador += 1 
+
+print(numeros)
+print(f'A média dos números digitados é: {sum(numeros) / len(numeros)}')
+print(f'O maior valor dos números digitados é: {max(numeros)}')
+print(f'Notas maiores ou iguais a 7: {min(numeros)}') 

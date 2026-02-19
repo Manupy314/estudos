@@ -1,0 +1,7 @@
+linguagens = ('Javascript','Rust','Swift','Python','Kotlin','Go','C#')
+
+i = 0
+while (linguagens[i] != 'Python'):
+    i += 1
+    
+print(f'Encontramos o Python na {i} posição')

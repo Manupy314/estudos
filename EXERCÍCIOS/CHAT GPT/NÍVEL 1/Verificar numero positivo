@@ -1,0 +1,8 @@
+num = int(input('Digite um número inteiro: '))
+
+if num > 0:
+    print(f'Você escolheu {num} que é um número positivo')
+elif num < 0:
+    print(f'Você escolheu {num} que é um número negativo')
+else:
+    print('Você escolheu o número zero')

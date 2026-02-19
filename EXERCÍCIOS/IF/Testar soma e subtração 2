@@ -1,0 +1,14 @@
+x = float(input('Digite o primeiro número: '))
+y = float(input('Digite o segundo número: '))
+
+soma = x + y
+sub = x - y
+
+testeA = soma > 10
+testeB = sub < 0
+
+if soma > 10:
+    print(f'A soma é maior que 10')
+
+if sub < 0:
+    print(f'A subtração é menor que 0')

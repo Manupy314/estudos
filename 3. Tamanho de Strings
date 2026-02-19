@@ -1,0 +1,9 @@
+########### TAMANHO DE STRINGS ###########
+s2 = (input('Insira sua frase:'))
+
+tamanho = len(s2)
+print(tamanho)  # quantidade de caracteres da string
+print(f'A variável {s2} tem {tamanho} caracteres.')
+
+teste= len(s2) <= 10
+print(teste)

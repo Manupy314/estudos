@@ -1,0 +1,12 @@
+palavra = input('Digite uma palavra: ')
+
+while len(palavra) < 4:
+    palavra = input('Digite uma palavra com pelo menos 4 letras: ')
+
+contador = 0
+
+for letra in palavra:
+    if letra == 'a':
+        contador = contador + 1
+
+print(f'Quantidade de letras "a": {contador}')

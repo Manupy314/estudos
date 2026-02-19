@@ -1,0 +1,38 @@
+sentido_da_vida = 42   
+print('Os sentido da vida é: ', sentido_da_vida) 
+
+####
+
+a= 1
+b = 5
+
+resposta_1 = a==b
+resposta_2 = a != b
+resposta_3 = a > b
+resposta_4 = a < b
+resposta = a >= b
+resposta_6 = a <= b
+
+print(resposta_1, resposta_2, resposta_3, resposta_4, resposta, resposta_6)
+
+###
+
+### OPERADORES ESPECIAIS DE ATRIBUIÇÃO
+
+# +=    I+=1   Ou seja, I = I + 1
+# -=    I-=1   Ou seja, I = I - 1
+# *=    I*=2   Ou seja, I = I * 2
+# /=    I/=2   Ou seja, I = I / 2
+# **=    I%=2   Ou seja, I = I % 2
+
+soma = 0
+soma += x # EQUIVALENTE A SOMA = SOMA + X
+
+####
+
+nota_1 = 8.0
+nota_2 = 5.0
+nota_3 = 10.0
+média = (nota_1 + nota_2 + nota_3) / 3
+
+print('Aluno aprovado com média ', média)

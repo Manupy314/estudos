@@ -1,0 +1,17 @@
+numeros = list()
+
+while True:
+    valor = (int(input('Insira um número inteiro (-1 para parar): ')))
+    if valor == -1:
+        break
+    numeros.append(valor)
+    
+contador = 0        
+for i in numeros:
+    if i > (sum(numeros) / len(numeros)):
+        contador += 15
+              
+print(len(numeros))
+print(f'A soma dos números digitados é: {sum(numeros)}')
+print(f'A média dos números é: {sum(numeros) / len(numeros)}')
+print(f'{contador} números são maiores que a média')

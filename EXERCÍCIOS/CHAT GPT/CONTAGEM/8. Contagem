@@ -1,0 +1,6 @@
+inicio = int(input('Insira o número inicial: '))
+fim = int(input('Insira o número final: '))
+
+for i in range(inicio, fim+1, 1):
+    if( i % 5 == 0):
+        print(i)

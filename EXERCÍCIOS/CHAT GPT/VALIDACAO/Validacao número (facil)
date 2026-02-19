@@ -1,0 +1,6 @@
+num = int(input('Insira um númeoro positivo inteiro: '))
+
+while num < 0:
+    num = int(input('Insira um númeoro positivo inteiro: '))
+
+print('Número Aceito')

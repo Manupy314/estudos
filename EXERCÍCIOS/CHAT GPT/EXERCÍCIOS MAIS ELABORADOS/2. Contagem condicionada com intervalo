@@ -1,0 +1,23 @@
+inicial = int(input('Insira o valor inicial = '))
+final = int(input('Insira o valor final = '))
+
+while final < inicial:
+    final = int(input('Insira um valor final válido: '))
+    
+pares = 0
+multiplos5 = 0
+pares_multiplos5 = 0
+
+for i in range(inicial, final + 1, 1):
+    if i % 2 == 0:
+        pares += 1
+    elif i % 5 == 0:
+        multiplos5 += 1
+    else:
+        i % 2 == 0 and i % 5 == 0
+        pares_multiplos =+ 1
+        
+print(f'A quantidade de números pares é de: {pares}')
+print(f'A quantidade de números múltiplos de 5 é de: {multiplos5}')  
+print(f'A quantidade de números pares e múltiplos de 5 é de: {pares_multiplos5}')         
+            

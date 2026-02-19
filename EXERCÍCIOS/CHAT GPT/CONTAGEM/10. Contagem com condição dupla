@@ -1,0 +1,11 @@
+contimp = 0
+contpar = 0
+
+for i in range(0, 101, 1):
+    if i % 2 == 0:
+        contpar += 1
+    if i % 3 == 0:
+        contimp += 1
+
+print(f'A quantidade de números pares são: {contpar}')
+print(f'A quantidade de números ímpares são: {contimp}')

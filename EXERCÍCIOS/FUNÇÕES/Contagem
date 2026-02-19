@@ -1,0 +1,12 @@
+
+num = 0
+num2 = 0
+
+def cont(fim,inicial = 0, passo = 1):
+    for i in range(inicial, fim , passo):
+        print(f'{i}', end = '')
+        print('\n')
+    
+#executar
+        
+cont(20, 10, 2)

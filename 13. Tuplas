@@ -1,0 +1,29 @@
+#estrutura imutável
+
+mochila = ('Laptop', 'Celular','Smartphone','Power Bank')
+print(mochila)
+
+### fatiação de tuplas
+
+print(mochila[0])
+print(mochila[2])
+print(mochila[0:2])
+print(mochila[2:])
+print(mochila[-1])
+
+### os dois sõa iguais
+
+for item in mochila:
+    print(f'Na minha mochila tem :{item}')
+    
+tam = len(mochila)
+for i in range(0, tam, 1):
+    print(f'Na minha mochila tem: {mochila[i]}')
+    
+### upgrade
+
+mochila = ('Laptop', 'Celular','Smartphone','Power Bank')
+upgrade = ('Kindle','Carlton')
+mochila_grande = mochila + upgrade
+
+print(mochila_grande)

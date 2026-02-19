@@ -1,0 +1,8 @@
+palavra = input('Insira uma palavra: ')
+contador = 0
+
+for letra in palavra:
+    if letra == 'a':
+        contador += 1
+    
+print(f'A quantidade "a" é: {contador}')

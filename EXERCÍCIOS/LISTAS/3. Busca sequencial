@@ -1,0 +1,10 @@
+def busca_sequencial(lista, dado):
+    x = 0
+    while x < len(lista):
+        if lista[x] == dado:
+            return x
+        x += 1
+        
+    for i in range(len(lista)):
+        if lista[i] == dado:
+            return i

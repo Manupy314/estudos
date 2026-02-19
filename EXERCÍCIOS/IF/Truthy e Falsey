@@ -1,0 +1,17 @@
+#código com números
+numero = 1 #diferente de zero então é truthy
+
+if numero:
+    print('O número é Truthy!')
+else:
+    print('O número é Falsey!')
+
+#código com strings
+
+texto = 'Olá' #string com conteudo então é truthy
+
+if texto:
+    print('O texto é Truthy!')
+else:
+    print('O texto é Falsey!')
+    

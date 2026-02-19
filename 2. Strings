@@ -1,0 +1,18 @@
+s1 = 'Manuela'
+s2 = s1 + ' Py'
+print(1)
+print(s2)
+
+#Linguagem de programação:
+#Python --- C --- Java --- PHP
+
+a = 'Linguagem de programação:\n' + '\t Python ' +  5*'-' + ' C ' + 5*'-' + ' Java'
+print(a)
+
+###### COMPOSIÇÃO DE F.STRINGS ###### só para indicar variável na frase
+
+nome = s2
+idade = 26
+a1 = f'Eu me chamo {nome} e tenho {idade} anos.'
+a2 = f'Em 5 anos estarei com {idade + 5} anos.'
+print(a1 and a2)

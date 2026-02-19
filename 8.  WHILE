@@ -1,0 +1,60 @@
+### WHILE
+
+i = 1
+while i <= 5:
+    print(i)
+    i += 1
+
+### VALIDAÇÃO DE DADOS DE ENTRADA
+
+x = int(input('Digite um valor maior que zero: '))
+while (x <= 0):
+    x = int(input('Digite um valor maior que zero: '))
+    print(f"Você digitou {x}. Então está correto.")
+    
+### SAINDO QUANDO QUISER
+
+print('Digite uma pensagem que irei repetir para você!')
+print('Para sair escreva: sair.')
+while(texto != 'sair'):
+    print(texto)
+    texto = input(' ')
+print('Programa encerrado!')
+
+### INTERROMPENSO LOOP COM "BREAK" - mais interessante de usar
+
+print('Digite uma pensagem que irei repetir para você!')
+print('Para sair escreva: sair.')
+texto = input(' ')
+while True:
+    texto = input(' ')
+    print(texto)
+    if texto == "sair": 
+        break
+print('Programa encerrado!')
+
+### VOLTANDO AO INICIO DO LOOP COM CONTINUE
+
+while True:
+   nome = input('Qual seu nome?') 
+   if (nome != 'Manuela'):
+       continue  ##volta início do laço, se acertar ele avança e pede a senha
+   senha = input('Qual sua senha?')
+   if(senha == 'CAT'):
+    break
+print('Acesso concedido')
+
+### ESTRUTURA DE REPETIÇÃO
+
+#versão 01
+i = 10
+while (i >= 0):
+    print(i)
+    i = i - 1
+    
+print('FOGO!')
+
+#versão 02 FOR
+
+for contador in range (10, -1 , -1): #range de dez a zero, de -1 em -1;
+    print(contador)

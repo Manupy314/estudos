@@ -1,0 +1,6 @@
+def formatar_nome(nome):
+    return nome.strip().title()
+
+nome = input('Insira seu nome: ')
+nome_formatado = formatar_nome(nome)
+print(f'Olá, {nome_formatado}!')

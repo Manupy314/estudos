@@ -1,0 +1,67 @@
+x = int(input("Digite um valor inteiro: "))
+y = int(input("Digite outro valor inteiro: "))
+
+if (x > y):
+    print("O primeiro valor é maior que o segundo.")
+if (x < y):
+    print("O primeiro valor é menor que o segundo.")
+    
+    
+###
+
+x = int(input('Digite um número inteiro: '))
+    
+if x % 2 == 0:
+    print(f'O número {x} é par.'  )
+else: print(f'O número {x} é ímpar.')
+
+
+###
+
+print('Escolha a fruta que deseja comprar:')
+print('1 - Maçã Rs 2,30 a unidade')
+print('2 - Laranja Rs 3,60 a unidade')
+print('3 - Banana Rs 1,85 a unidade')
+
+produto = int(input('Qual sua escolha?: '))
+qnt = float(input('Unidades você deseja?: '))
+    
+if(produto == 1):
+    pagar = qnt*2.3
+    print(f'Você comprou {qnt} de maças. Total a pagar: R$ {pagar:.2f}')
+elif(produto == 2):
+    pagar = qnt*3.6
+    print(f'Você comprou {qnt} de laranjas. Total a pagar: R$ {pagar:.2f}')
+elif(produto == 3):
+    pagar = qnt*1.85
+    print(f'Você comprou {qnt} de bananas. Total a pagar: R$ {pagar:.2f}')
+else:
+    print('Produto inválido! Tente novamente.')
+    
+###
+
+print('CALCULADORA')
+print('+ Adição')
+print('- Subtração')
+print('* Multiplicação')
+print('/ Divisão')
+print('Digite outra tecla para sair')
+
+op = input('Escolha a operação que deseja realizar?')
+x = int(input('Digite o primeiro número: '))
+y = int(input('Digite o segundo número: '))
+
+if (op == '+'):
+    res = x + y
+    print(f'{x} + {y} = {res}')
+elif (op == '-'):
+    res = x - y
+    print(f'{x} - {y} = {res}')
+elif (op == '*'):   
+    res = x * y
+    print(f'{x} * {y} = {res}')
+elif (op == '/'):
+    if y != 0:
+        print(f'{x} / {y} = {x / y}')
+    else:
+        print('Erro: Divisão por zero não é permitida.')

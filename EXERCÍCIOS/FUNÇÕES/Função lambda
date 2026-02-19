@@ -1,0 +1,3 @@
+funcao = lambda a, b: (a + 5) * b
+print(funcao(3,4))
+      

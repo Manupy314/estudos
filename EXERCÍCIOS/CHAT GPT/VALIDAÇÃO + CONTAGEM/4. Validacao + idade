@@ -1,0 +1,12 @@
+contador = 0
+
+for idade in range(5):
+    idade = int(input('Insira uma idade: '))
+    
+    while idade < 0 or idade > 120:
+        idade = int(input('Insira uma idade válida: '))
+    
+    if idade >= 18:
+        contador += 1
+
+    print('O número de idades maiores ou iguais a 18 anos é de: {idade}')

@@ -1,0 +1,42 @@
+#####construibndo listas
+
+mochila = ('Laptop', 'Celular','Smartphone','Power Bank')
+print(mochila)
+
+mochila.append('Óculos')  ##final da lista
+print('Lista: ', mochila)
+
+mochila.insert(1, 'Canivete')  ##insert substituir índice específico
+print('Lista: ', mochila)
+
+del mochila[1]  ##remove índice específico
+print('Lista: ', mochila)  
+
+mochila.remove('Óculos') ##remove pelo dado específico
+print('Lista: ', mochila)  
+
+#####cópia de listas
+
+x = [2, 4, 6, 8]
+y = x
+print(x)
+print(y)
+
+y[0] = 12 ## alterando y, altera x tbm pq os dois apontam para o mesmo local na memória
+print(x)
+print(y)
+
+#cópia
+
+x = [2, 4, 6, 8]
+print(x)
+print(y)
+
+####percorrer lista
+
+x = [2, 4, 6, 8, 10]
+
+for numero in x:
+    print(numero)
+
+

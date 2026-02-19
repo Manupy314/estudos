@@ -1,0 +1,13 @@
+frase = input('Digite uma frase: ')
+tamanho = len(frase)
+
+while((tamanho<10) or (tamanho>30)):
+    frase = input('Digite uma frase: ')
+    tamanho = len(frase)
+    
+print(f'Com espaços: {frase}')
+
+for i in range (0, tamanho):
+    if(frase[i] != ' '):
+        print(f'Sem espaços: {frase[i]}', end = '') #ficar tudo em uma linha só end = ''
+    

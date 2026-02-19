@@ -1,0 +1,13 @@
+palavra = input('Insira uma palavra: ')
+
+while len(palavra) <=5:
+    palavra = input('Insira uma palavra novamente: ')
+
+contador = 0
+
+for letra in palavra:
+    if letra == 'e':
+        contador += 1
+
+print(f'Quantidade de letras "e: {contador}')
+            

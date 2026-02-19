@@ -1,0 +1,11 @@
+def avaliar_nota(nota):
+    if nota >= 7:
+        return 'Aprovado!'
+    elif 7 >= nota >= 5:
+        return'Em recuperação'
+    else:
+        return 'Reprovado'
+    
+
+nota = int(input('Insira sua nota: '))
+print(avaliar_nota(nota))

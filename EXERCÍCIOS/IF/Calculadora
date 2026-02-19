@@ -1,0 +1,25 @@
+print('CALCULADORA')
+print('+ Adição')
+print('- Subtração')
+print('* Multiplicação')
+print('/ Divisão')
+print('Digite outra tecla para sair')
+
+op = input('Escolha a operação que deseja realizar?')
+x = int(input('Digite o primeiro número: '))
+y = int(input('Digite o segundo número: '))
+
+if (op == '+'):
+    res = x + y
+    print(f'{x} + {y} = {res}')
+elif (op == '-'):
+    res = x - y
+    print(f'{x} - {y} = {res}')
+elif (op == '*'):   
+    res = x * y
+    print(f'{x} * {y} = {res}')
+elif (op == '/'):
+    if y != 0:
+        print(f'{x} / {y} = {x / y}')
+    else:
+        print('Erro: Divisão por zero não é permitida.')

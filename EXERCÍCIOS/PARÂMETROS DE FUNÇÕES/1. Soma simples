@@ -1,0 +1,7 @@
+def soma(x,y):
+    res = x + y
+    print(res)
+    
+soma(4, 5)
+    
+    

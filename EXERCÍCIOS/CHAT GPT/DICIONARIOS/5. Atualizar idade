@@ -1,0 +1,5 @@
+pessoa = {'nome': 'Ana', 'idade': 25}
+
+pessoa['idade'] = 26
+
+print(pessoa)

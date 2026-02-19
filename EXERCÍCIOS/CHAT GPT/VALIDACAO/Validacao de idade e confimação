@@ -1,0 +1,13 @@
+idade = int(input('Insira sua idade: '))
+
+while idade < 18 or idade > 70:
+    idade = int(input('Insira uma idade válida (18 a 70): '))
+
+print('Idade válida.')
+
+conf = input('Confirmar cadastro? (S/N): ').strip().upper()  ## strip = remove espaços em branco
+
+while conf != 'S':
+    conf = input('Confirmar cadastro? (S/N): ').strip().upper()  ## upper = totas as letras em maíusculas
+
+print('Cadastro confirmado.')

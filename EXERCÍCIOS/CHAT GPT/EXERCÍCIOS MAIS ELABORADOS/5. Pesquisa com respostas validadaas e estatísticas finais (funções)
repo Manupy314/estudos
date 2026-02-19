@@ -1,0 +1,53 @@
+def ler_horas_estudo():
+    horas = int(input('Quantas horas de estudo por dia? (0 a 24) '))
+
+    while horas < 0 or horas > 24:
+        horas = int(input('Valor inválido. Digite horas de estudo (0 a 24): '))
+
+    return horas
+
+
+def ler_resposta_qgis():
+    resposta = input('Você estuda com QGIS? (S/N) ').strip().upper()
+
+    while resposta != 'S' and resposta != 'N':
+        resposta = input('Resposta inválida. Você estuda com QGIS? (S/N) ').strip().upper()
+
+    return resposta
+
+
+def pesquisa_qgis(quantidade_pessoas):
+    cont_s = 0
+    cont_n = 0
+    soma_horas_s = 0
+
+    for i in range(quantidade_pessoas):
+        horas = ler_horas_estudo()
+        resposta = ler_resposta_qgis()
+
+        if resposta == 'S':
+            cont_s = cont_s + 1
+            soma_horas_s = soma_horas_s + horas
+        else:
+            cont_n = cont_n + 1
+
+    if cont_s > 0:
+        media = soma_horas_s / cont_s
+    else:
+        media = None
+
+    return cont_s, cont_n, media
+
+
+# Programa principal
+quantidade = 5
+usam_qgis, nao_usam_qgis, media_horas = pesquisa_qgis(quantidade)
+
+print('--- Resultado ---')
+print(f'Respostas S: {usam_qgis}')
+print(f'Respostas N: {nao_usam_qgis}')
+
+if media_horas is not None:
+    print(f'Média de horas (apenas quem usa QGIS): {media_horas:.1f}')
+else:
+    print('Média de horas (apenas quem usa QGIS): não há respostas "S".')

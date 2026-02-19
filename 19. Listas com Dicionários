@@ -1,0 +1,31 @@
+game = []
+
+game1 = {'nome': 'Supermário',
+         'videogame': 'Super Nintendo',
+         'ano': 1990}
+
+game2 = {'nome': 'Zelda',
+         'videogame': 'Nintendo 64',
+         'ano': 1990}
+
+game3 = {'nome': 'Pokemon Yellow',
+         'videogame': 'Game Boy',
+         'ano': 1999}
+
+games = [game1, game2, game3]
+print(games)
+
+
+game = {}
+games = []
+
+for i in range(3):
+    game['nome'] = input('Qual o nome do jogo?')
+    game['videogame'] = input('Para qual video-game ele foi lançado?')
+    game['ano'] = input('Qual o ano de lançamento?')
+    games.append(game.copy())
+
+print('-' * 20)
+for jogos in games:
+    for chave, valor in jogos.items():
+        print(f'O campo {chave} tem o valor {valor}.')

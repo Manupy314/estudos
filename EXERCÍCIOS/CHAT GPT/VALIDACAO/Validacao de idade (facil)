@@ -1,0 +1,6 @@
+idade = int(input('Insira sua idade: '))
+
+while idade < 18:
+    idade = input('Insira sua idade: ')
+
+print('Acesso permitido')

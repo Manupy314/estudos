@@ -1,0 +1,18 @@
+def valida_int(pergunta, min, max):
+    x = int(input(pergunta))
+    while ((x < min) or (x > max)):
+        x = int(input(pergunta))
+        return x
+    
+def soma_int(inicio, fim):
+    soma = 0
+    i = inicio
+    while (i <= fim):
+        soma += i
+        i += 1
+    return soma
+        
+x = valida_int('Digite um valor inteiro e positivo: ', 1, 9999)
+y = valida_int('DIgite um segundo valor inteiro e positivo: ', 1, 9999)
+
+print(f'Somatório entre {x} e {y} é {soma_int(x, y)}')

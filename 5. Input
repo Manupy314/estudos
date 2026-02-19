@@ -1,0 +1,11 @@
+########### INPUT ###########
+
+idade = input('Digite sua idade:')
+print(f'Você tem {idade} anos.')
+
+nome = input("Qual seu nome?")
+print(f'Olá, {nome}", seja bem-vindo!')
+
+num1 = float(input('Digite um número:')) ######### colocar como float para fazer operações matemáticas, senão lê com string
+num2 = int(input('Digite outro número:')) ######### número inteiro
+print(f'A soma entre {num1} e {num2} é igual a {num1 + num2}.')

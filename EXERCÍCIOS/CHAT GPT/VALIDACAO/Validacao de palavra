@@ -1,0 +1,6 @@
+palavra = input('Insira uma palavra: ')
+
+while len(palavra) <= 4:
+    palavra = input('Insira uma palavra: ')
+    
+print('Palavra Válida')

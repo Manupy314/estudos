@@ -1,0 +1,9 @@
+numeros = list()
+
+for i in range(5):
+    numeros.append(int(input('Digite um número inteiro: ')))
+
+print(numeros)
+print(f'A soma dos números digitados é: {sum(numeros)}')
+print(f'O maior valor dos números digitados é: {max(numeros)}')
+print(f'O menor valor dos números digitados é: {min(numeros)}')

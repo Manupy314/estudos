@@ -1,0 +1,7 @@
+inicio = int(input('Insira um número inteiro inicial: '))
+fim = int(input('Insira um número inteiro final: '))
+
+while fim <= inicio:
+    fim = int(input('Insira um número inteiro final novamente: '))
+
+print('Intervalo Válido')

@@ -1,0 +1,12 @@
+sen = (input('Insira uma senha: '))
+
+while len(sen) < 6 or sen == '123456':
+    if len(sen) < 6:
+        print('A senha deve ter pelo menos seis caracteres')
+    if sen == '123456':
+        print('A senha não pode ser "123456"')
+        
+    sen = (input('Insira uma novamente senha: '))
+    
+print('Senha aceita.')
+    

@@ -1,0 +1,15 @@
+soma = 0
+qnt = 0
+
+while True:
+    x = int(input('Digite um valor inteiro e positivo: '))
+    if(x <= 0):
+        break
+    
+    soma += x
+    qnt += 1
+
+    
+media = soma / qnt
+
+print(f'A média dos valores é: {media}')

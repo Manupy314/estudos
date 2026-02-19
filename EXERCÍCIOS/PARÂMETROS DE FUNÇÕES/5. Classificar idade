@@ -1,0 +1,7 @@
+def conversor(temp_c):
+    return temp_c * 1.8 + 32
+
+temp_c = int(input('Insira uma temperatura em Celsius: '))
+temp_f = conversor(temp_c)
+
+print(f'A temperatura de {temp_c} equivale a {temp_f} graus Fahrenheit')

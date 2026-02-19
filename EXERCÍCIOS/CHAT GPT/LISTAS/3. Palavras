@@ -1,0 +1,7 @@
+palavras = list()
+
+for i in range(3):
+    palavras.append(input('Digite uma palavra: '))
+    
+print(palavras)
+print(f'A quandidade de palavras foi: {len(palavras)}')

@@ -1,0 +1,22 @@
+### ESTRUTURAS DE REPETIÇÃO ANINHADAS
+
+tabuada = 1
+while tabuada <= 10:
+    print(f'TABUADA DO {tabuada}: ') 
+    i = 1
+    while i <= 10:
+         print(f'{i} x {tabuada} = {i * tabuada}')
+         i += 1
+    tabuada += 1
+    
+for tabuada in range (1, 11, 1):
+    print(f'TABUADA DO {tabuada}: ')
+    for i in range (1, 11, 1):
+        print(f'{i} x {tabuada} = {i * tabuada}')
+        
+while tabuada <= 10:
+    print(f'TABUADA DO {tabuada}: ')s
+    tabuada += 1
+    for i in range(1, 11, 1):
+        print(f'{i} x {tabuada} = {i * tabuada}')
+    tabuada += 1

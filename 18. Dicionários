@@ -1,0 +1,26 @@
+# tupla()
+mochila = ('Laptop', 'Celular', 'Smartphone', 'Power Bank')
+print(f'Tupla: {mochila}')
+
+# lista[]
+mochila = ('Laptop', 'Celular', 'Smartphone', 'Power Bank')
+print(f'Lista: {mochila}')
+
+# dicionário{}
+mochila = {'Laptop': 1, 'Celular': 2, 'Smartphone': 3, 'Power Bank': 4}
+print(f'Dicionário: {mochila}')
+
+# se eu quiser acessar os dados
+
+print(mochila['Laptop'])  # ou
+
+print(mochila.values())
+
+for i in mochila.values():
+    print(i)
+
+for i in mochila.keys():
+    print(i)
+
+for chave, dado in mochila.items():
+    print(f'{chave} = {dado}')

@@ -1,0 +1,14 @@
+
+d= int(input('Quantos dias?'))
+h= int(input('Quantas horas?'))
+m= int(input('Quantos minutos?'))
+s= int(input('Quantos segundos?'))
+
+##calcular segundos por variável
+## 1 dia = 24h | 1h = 60min | 1 min = 60s
+
+total = s + (m*60) + (h*60*60) + (d*54*60*60)
+
+res = f'O Total de segundos calculados é de {total}.'
+
+print(res)

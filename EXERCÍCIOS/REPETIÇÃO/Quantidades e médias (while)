@@ -1,0 +1,36 @@
+qnt_intpos = 0
+qnt_par = 0
+qnd_impar = 0
+soma_intpos = 0
+soma_par = 0
+soma_impar = 0
+
+
+inicial = int(input("Insira o valor par inicial: "))
+fim = int(input("Insira o valor par final: "))
+
+i = inicial
+if (inicial < fim):
+    while (i <= fim):
+        if (i > 0):
+            qnt_intpos = qnt_intpos + 1
+            soma_intpos = soma_intpos + i
+        if (i % 2 == 0):
+            qnt_par = qnt_par + 1
+            soma_par = soma_par + i
+        else:
+            qnd_impar = qnd_impar + 1
+            soma_impar = soma_impar + i  
+               
+    media_positivo = soma_intpos / qnt_intpos
+    media_par      = soma_par / qnt_par
+    media_impar    = soma_impar / qnd_impar
+    
+    print(f'Quantidade de inteiros positivos:{qnt_intpos}')
+    print(f'Quantidade de números pares:{qnt_par}')
+    print(f'Quantidade de números ímpares:{qnd_impar}')
+    print(f'A média dos inteiros positivos é {media_positivo}.')
+    print(f'A média dos números pares é {media_par}.')
+    print(f'A média dos números ímpares é {media_impar}.')   
+else:
+    print("O valor inicial deve ser menor que o valor final.")

@@ -1,0 +1,22 @@
+def nome_valido(nome):
+    return len(nome) >= 2
+
+
+def validar_usuario(nome, idade):
+    if idade >= 18:
+        return 'Cadastro válido'
+    else:
+        return 'Cadastro inválido'
+
+
+# Programa principal
+
+nome = input('Insira seu nome: ')
+
+while not nome_valido(nome):
+    nome = input('Nome inválido. Insira novamente: ')
+
+idade = int(input('Insira sua idade: '))
+
+resultado = validar_usuario(nome, idade)
+print(resultado)

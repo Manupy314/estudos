@@ -1,0 +1,8 @@
+inicial = int(input("Insira o valor par inicial: "))
+fim = int(input("Insira o valor par final: "))
+
+i = inicial
+while (i <= fim):
+    if (i % 2 == 0):
+        print(i)
+    i = i + 1

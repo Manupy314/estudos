@@ -1,0 +1,8 @@
+valores = [1, 2, 2, 3, 4, 4, 5]
+nova_lista = []
+
+for valor in valores:
+    if valor not in nova_lista:
+        nova_lista.append(valor)
+
+print('Lista sem duplicados:', nova_lista)

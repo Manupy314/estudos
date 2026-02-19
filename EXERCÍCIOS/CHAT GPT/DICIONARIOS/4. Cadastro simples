@@ -1,0 +1,9 @@
+pessoa = {
+    'nome': 'Maria',
+    'idade': 30,
+    'cidade': 'Porto Alegre'
+}
+
+print('Nome:', pessoa['nome'])
+print('Idade:', pessoa['idade'])
+print('Cidade:', pessoa['cidade'])

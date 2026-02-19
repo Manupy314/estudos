@@ -1,0 +1,5 @@
+palavra = input('Insira uma palavra: ')
+num = int(input('Insira um número inteiro: '))
+
+for i in range(num):
+    print(palavra)

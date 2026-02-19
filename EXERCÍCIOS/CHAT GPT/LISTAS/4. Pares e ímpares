@@ -1,0 +1,19 @@
+numeros = list()
+
+for i in range(5):
+    numeros.append(int(input('Digite um número inteiro: ')))
+    
+print(numeros)
+print(f'A soma dos números escritos é: {sum(numeros)}')
+
+pares = list()
+ímpares = list()
+
+for i in numeros:
+    if i % 2 == 0:
+        pares.append(i)
+    else:
+        ímpares.append(i)
+
+print(f'Os números pares são: {pares}')
+print(f'Os números ímpares são: {ímpares}')

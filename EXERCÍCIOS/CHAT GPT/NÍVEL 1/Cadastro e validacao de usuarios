@@ -1,0 +1,12 @@
+nome = ''
+idade = 0
+
+while not nome:
+    nome = input('Digite seu nome: ')
+
+while idade <= 0:
+    idade = int(input('Digite sua idade: '))
+
+print('Cadastro realizado com sucesso!')
+print(f'Nome: {nome}')
+print(f'Idade: {idade}')

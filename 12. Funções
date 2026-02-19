@@ -1,0 +1,38 @@
+#criando uma função própria, por exemplo para usar menos print
+
+def nome_funcao():
+    print('|','#'*20,'|')
+    
+        #programaprincipal
+        
+nome_funcao()
+print('|','MENU','|')
+nome_funcao()
+
+#parâmetros em funções = variável nos parenteses
+def nome_funcao(s1):
+    print('|','#'*20,'|')
+    print(s1)
+    print('|','#'*20,'|')
+    
+    #programaprincipal
+        
+nome_funcao('------menu')
+
+#funções ocm mais de um parâmetro
+
+def sub2(x,y):  #exemplo para subtrair dois
+    res = x - y
+    print(res)
+    
+    #programaprincipal
+        
+sub2(7,5)
+sub2(10,20)
+
+
+####
+
+funcao = lambda a, b: (a + 5) * b
+print(funcao(3,4))
+      

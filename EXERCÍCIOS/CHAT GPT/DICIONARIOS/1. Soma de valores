@@ -1,0 +1,10 @@
+numeros = []
+
+for i in range(5):
+    valor = int(input('Insira um número: '))
+    numeros.append(valor)
+
+print('Lista:', numeros)
+print('Soma:', sum(numeros))
+print('Maior:', max(numeros))
+print('Menor:', min(numeros))

@@ -1,0 +1,8 @@
+def area_retangulo(base, altura):
+    area = base * altura
+    return area
+
+base = int(input('Insira o valor da base: '))
+altura = int(input('Insira o valor da altura: '))
+area_retangulo(base, altura)
+print(f'O valor da área do retângulo é {area_retangulo(base, altura)}')

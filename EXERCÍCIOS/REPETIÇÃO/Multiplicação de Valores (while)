@@ -1,0 +1,10 @@
+v1 = int(input('Digite o 1º valor: '))
+v2 = int(input('Digite o 2º valor: ')) #5
+
+i = 0
+produto = 0
+while (i < v2):
+    produto = produto + v1  
+    i = i + 1
+
+print(f'O produto entre {v1} e {v2} é {produto}.')

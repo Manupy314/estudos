@@ -1,0 +1,12 @@
+contador = 0
+
+for i in range(5):
+    num = int(input('Digite um número maior ou igual a zero: '))
+
+    while num < 0:
+        num = int(input('Digite um número maior ou igual a zero: '))
+
+    if num > 10:
+        contador = contador + 1
+
+print(f'Maiores que 10: {contador}')

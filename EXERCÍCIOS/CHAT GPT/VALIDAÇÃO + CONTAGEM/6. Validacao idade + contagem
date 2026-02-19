@@ -1,0 +1,12 @@
+for i in range(6):
+    idade = int(input('Insira uma idade: '))
+    
+    while idade < 0 or idade > 120:
+        idade = int(input('Insira a idade novamente: '))
+
+    contagem = 0
+
+    if 18 <= idade <= 60:
+        contagem += 1
+    
+print(f'O número de pessoas entre 18 e 60 anos é de: {contagem}') 

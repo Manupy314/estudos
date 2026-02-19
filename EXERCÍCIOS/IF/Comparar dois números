@@ -1,0 +1,8 @@
+m = int(input('Digite um número inteiro: '))
+n = int(input('Digite outro número inteiro: '))
+    
+if (m>n):
+    print(f'O número {m} é maior que {n}')
+elif (m<n):
+    print(f'O número {m} é menor que {n}')
+else:print(f'Os números são iguais.')

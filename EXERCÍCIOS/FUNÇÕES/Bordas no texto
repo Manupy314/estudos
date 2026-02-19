@@ -1,0 +1,12 @@
+def borda (s1):
+    tam = len(s1)
+    if tam:
+        print('+', '-' * tam,'+')
+        print('|',s1 ,'|')
+        print('+', '-' * tam,'+')
+        
+#executar
+
+borda('Olá, Mundo')
+borda('Manuela Py')
+borda('Meu deus, que dor no ciático')

@@ -1,0 +1,9 @@
+def soma(*num): ## quando eu coloco um asterisco digo que a variável tem valores arbitrários de parâmetros
+    soma = 0
+    print(f'Tupla: {num}')
+    for i in num:
+        soma += 1
+    return soma
+
+print(f'Resultado: {soma(1,2)}\n')
+print(f'Rsultado: {soma(1,2,3,4,5,6,7,88,99)}\n')

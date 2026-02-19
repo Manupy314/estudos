@@ -1,0 +1,6 @@
+def contar(palavra):
+    return len(palavra)
+
+palavra = input('Insira uma palavra ')
+resultado = contar(palavra)
+print(resultado)

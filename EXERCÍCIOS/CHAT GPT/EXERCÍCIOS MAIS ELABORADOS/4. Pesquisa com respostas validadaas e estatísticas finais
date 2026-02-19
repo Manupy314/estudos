@@ -1,0 +1,45 @@
+cont_qgis = 0
+cont_nqgis =0
+cont_2mais = 0
+cont_2menos = 0
+soma_horas = 0
+media = 0
+    
+for i in range(8):
+    horas_estudo = int(input('Quantas horas de estudo por dia?'))
+    
+    while horas_estudo > 24 or horas_estudo < 0:
+        horas_estudo = int(input('Respoasta inválida. Quantas horas de estudo por dia?'))
+    
+    if horas_estudo >= 2:
+        cont_2mais += 1
+    else:
+        cont_2menos += 1
+    
+    estuda_qgis = input('Você estuda com QGIS? (S/N)').strip().upper()
+
+    while estuda_qgis != 'S' and estuda_qgis != 'N':
+        estuda_qgis = input('Resposta inválida. Você estuda com QGIS? (S/N)').strip().upper()
+        
+    if estuda_qgis == 'S':
+        cont_qgis += 1   
+        soma_horas += 1
+        
+        if horas_estudo >= 2:
+            cont_2mais += 1
+        else:
+            cont_2menos += 1
+     
+    else:
+        cont_nqgis += 1
+ 
+print(f'Quantas pessoas estudam com QGIS? {cont_qgis}')
+print(f'Quantas pessoas não estudam com QGIS? {cont_nqgis}')
+print(f'Quantas pessoas estudam mais de 2h por dia? {cont_2mais}')
+print(f'Quantas pessoas estudam menos de 2h por dia? {cont_2menos}')
+
+if cont_qgis > 0:
+    media = soma_horas / cont_qgis
+    print(f'Média de horas (apenas quem usa QGIS): {media:.1f}')
+else:
+    print('Média de horas (apenas quem usa QGIS): não há respostas "S".')

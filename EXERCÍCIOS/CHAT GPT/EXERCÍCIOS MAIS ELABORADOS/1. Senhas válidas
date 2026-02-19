@@ -1,0 +1,18 @@
+primeira_tentativa = 0
+repeticao = 0
+
+for i in range(5):
+    senha = input('Insira uma senha: ')
+    repetiu = False
+    
+    while len(senha) < 6 or senha == '123456':
+        repetiu = True
+        senha = input('Insira uma senha válida:')
+    
+    if repetiu:
+        repetição += 1
+    else:
+        primeira_tentativa += 1
+    
+print(f'Senhas aceitas na primeira tentativa: {primeira_tentativa}')
+print(f'Senhas com repetição: {repeticao}')

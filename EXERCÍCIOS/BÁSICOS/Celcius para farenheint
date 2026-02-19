@@ -1,0 +1,6 @@
+#### converter Celcius (c) para Farenheint (f) ####
+# Fórmula: f = (c * 9/5) + 32
+
+c = float(input('Digite a temperatura em graus Celcius: '))
+
+print(f'A temperatura de {c}°C corresponde a { (c * 9/5) + 32 }°F')

@@ -1,0 +1,12 @@
+nome = input('Insira seu nome: ')
+idade = int(input('Insira sua idade: '))
+
+while nome == '':
+    nome = input('Insira seu nome novamente: ')
+    
+while 18 > idade or idade > 65:
+    nome = input('Insira sua idade novamente: ')
+    
+print('Cadastro validado com sucesso')
+print(f'Nome: {nome}')
+print(f'Idade: {idade}')

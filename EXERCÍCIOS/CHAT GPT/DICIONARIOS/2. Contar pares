@@ -1,0 +1,9 @@
+numeros = [2, 5, 8, 11, 14, 3, 6]
+
+quantidade_pares = 0
+
+for numero in numeros:
+    if numero % 2 == 0:
+        quantidade_pares += 1
+
+print('Quantidade de números pares:', quantidade_pares)

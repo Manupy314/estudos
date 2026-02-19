@@ -1,0 +1,47 @@
+item = []
+mercado = list() #outra forma de criare uma lista vazia
+
+for i in range(3):
+    item.append(input('Digite o nome do item: '))
+    item.append(int(input('Digite a quantidade: ')))
+    item.append(float(input('Digite o preço: ')))
+    mercado.append(item[:]) #copia os valores de item para mercado  
+    item.clear()
+print(mercado)
+
+##outra forma de fazer:
+
+mercado = []
+
+for i in range(3):
+    nome = input('Digite o nome do item: ')
+    quantidade = int(input('Digite a quantidade: '))
+    preco = float(input('Digite o preço: '))
+    mercado.append([nome, quantidade, preco]) #adiciona uma nova lista dentro da lista mercado
+print(mercado)
+    
+#resposta
+#[['arroz', 3, 5.0], ['tomate', 3, 6.0], ['pães', 12, 5.0]]
+
+##acessando os valores da lista dentro da lista
+
+#qual nome primeiro produto?
+print(mercado[0][0])
+#quanto custa um tomate
+print(mercado[1][2])
+#quantos pães foram comprados
+print(mercado[2][1])
+
+##maias exemplos
+
+soma = 0
+print('Lista de compras:')
+print('-' * 20)
+print('item | quantidade | valor unitário | total do item')
+
+for item in mercado:
+    print(f'{item[0]} | {item[1]} | {item[2]} | {item[1] * item[2]}')
+    soma += item[1] * item[2]
+
+print('-' * 20)
+print(f'Total a ser pago: {soma}')

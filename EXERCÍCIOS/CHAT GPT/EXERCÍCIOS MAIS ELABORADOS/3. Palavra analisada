@@ -1,0 +1,16 @@
+palavra = input('Insira uma palavra com no mínimo 6 caracteres: ')
+
+while len(palavra) < 6:
+    palavra = input('Entrada inválida. Insira uma palavra com no mínimo 6 caracteres: ')
+    
+vogais = 0
+consoantes = 0
+
+for letra in palavra:
+    if letra == 'a' or 'e' or 'i' or 'a' 'u':
+        vogais += 1
+    else:
+        consoantes += 1
+        
+print(f'A quantidade de vogais em {palavra} é de: {vogais}')
+print(f'A quantidade de consoantes em {palavra} é de: {consoantes}')

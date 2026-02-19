@@ -1,0 +1,6 @@
+num = int(input('Digite para um número para calcular a tabuada: '))
+
+print(f'Tabuada do {num}:')
+
+for i in range(1, 11, 1):
+    print(f'{i} x {num} = {i * num}')     

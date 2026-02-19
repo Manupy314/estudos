@@ -1,0 +1,7 @@
+senha = input('Digite a senha: ')
+tam = len(senha)
+
+if senha and tam >= 8:
+    print('Senha válida')
+else:
+    print('Senha inválida')

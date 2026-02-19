@@ -1,0 +1,28 @@
+pessoas = list()
+imc = lambda peso, altura: peso / (altura * altura)
+
+while True:
+    nome = input('Nome: ')
+    altura = float(input('Altura (cm): '))
+    peso = float(input('Peso (kg): '))
+    x = imc(peso, altura)
+    pessoas.append((nome, altura, peso))
+
+    res = input('Deseja efetuar mais um cadastro? (s/n) ').strip().lower()
+    if res in 'Nn':
+        break
+    
+print('--- RELATÓRIO FINAL ---')
+print(f'Cadastros: {pessoas}')
+print(f'Total de cadastros: {len(pessoas)}')
+
+maior = 0
+menor = 99
+for cadastro in pessoas:
+    if (cadastro[3] > maior):
+        maior = cadastro[3]
+    if (cadastro[3] < menor):
+        menor = cadastro[3]
+        
+print(f'Maior IMC: {maior:.2f}')
+print(f'Menor IMC: {menor:.2f}')

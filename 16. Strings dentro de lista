@@ -1,0 +1,15 @@
+mochila = ('Laptop', 'Celular','Smartphone','Power Bank')
+print(mochila[1])
+
+##letra C da mochila[1] é C. Para puxar o primeiro valor C minúsculo, usamos:
+print(mochila[1][0])
+
+for item in mochila:
+    for letra in item:
+        print(letra, end=' ') ## end='' para não pular linha
+    print()  # para pular linha após cada item
+    
+    for i in range(0, len(item), 1):
+        for j in range(0, len(item[i]), 1):
+            print(item[i][j], end=' ')  
+        print() 

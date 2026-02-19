@@ -1,0 +1,62 @@
+def ler_quantidade_livros():
+    livros = int(input('Quantos livros você lê por ano? (0 a 100): '))
+
+    while livros < 0 or livros > 100:
+        livros = int(input('Valor inválido. Digite um número entre 0 e 100: '))
+
+    return livros
+
+
+def ler_livros_tecnicos():
+    resposta = input('Você lê livros técnicos? (S/N): ').strip().upper()
+
+    while resposta != 'S' and resposta != 'N':
+        resposta = input('Resposta inválida. Você lê livros técnicos? (S/N): ').strip().upper()
+
+    return resposta
+
+
+def pesquisa_leitura(quantidade_pessoas):
+    cont_tecnicos = 0
+    cont_nao_tecnicos = 0
+    cont_mais_5 = 0
+    cont_5_ou_menos = 0
+    soma_livros_tecnicos = 0
+
+    for i in range(quantidade_pessoas):
+        livros = ler_quantidade_livros()
+        resposta = ler_livros_tecnicos()
+
+        if resposta == 'S':
+            cont_tecnicos += 1
+            soma_livros_tecnicos += livros
+
+            if livros > 5:
+                cont_mais_5 += 1
+            else:
+                cont_5_ou_menos += 1
+        else:
+            cont_nao_tecnicos += 1
+
+    if cont_tecnicos > 0:
+        media = soma_livros_tecnicos / cont_tecnicos
+    else:
+        media = None
+
+    return cont_tecnicos, cont_nao_tecnicos, cont_mais_5, cont_5_ou_menos, media
+
+
+# Programa principal
+quantidade = 6
+tecnicos, nao_tecnicos, mais_5, ate_5, media = pesquisa_leitura(quantidade)
+
+print('--- Resultado da pesquisa ---')
+print(f'Leem livros técnicos: {tecnicos}')
+print(f'Não leem livros técnicos: {nao_tecnicos}')
+print(f'Técnicos com mais de 5 livros/ano: {mais_5}')
+print(f'Técnicos com 5 livros ou menos/ano: {ate_5}')
+
+if media is not None:
+    print(f'Média de livros (apenas técnicos): {media:.1f}')
+else:
+    print('Média de livros (apenas técnicos): não há respostas "S".')

@@ -1,0 +1,22 @@
+
+######################################################################################## ##MENU PARA ESCOLHER QUAL CÓDIGO RODAR
+opcao = input("Qual você quer rodar? 1 ou 2 ou 3 ou 4 ou 5 ou 6 ou 7 ou 8 ou 9: ")
+
+
+    codigo_2()
+elif opcao == "3": # testar se pode dirigir
+    codigo_3()
+elif opcao == "4": # calcular bônus salarial
+    codigo_4()
+elif opcao == "5": # testar se o número é par ou ímpar
+    codigo_5()
+elif opcao == "6": # testar se o aluno passou de ano
+    codigo_6()
+elif opcao == "7": # testar se o número está em um intervalo
+    codigo_7()
+elif opcao == "8": # comparar dois números
+    codigo_8()
+elif opcao == "9": # condições aninhadas / compra de frutas
+    codigo_9()  
+else:
+    print("Opção inválida.")

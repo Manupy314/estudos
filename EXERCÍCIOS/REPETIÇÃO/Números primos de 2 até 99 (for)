@@ -1,0 +1,12 @@
+#número divisível por 1
+#divisível por ele mesmo
+
+print('Primos de 2 até 99:')
+
+for num in range (2, 100, 1):
+    
+    for i in range(2, num, 1):
+        if(num % i == 0):
+            break
+        
+        

@@ -1,0 +1,11 @@
+def ver_par(num):
+   if num % 2 == 0:
+       return True
+   else:
+       return False 
+
+num = int(input('Digite um número: '))
+resultado = ver_par(num)
+print(resultado)
+
+
